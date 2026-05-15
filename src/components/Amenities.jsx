@@ -4,52 +4,105 @@ import {
   FaHotel,
 } from "react-icons/fa";
 
-import { MdRestaurant,MdCelebration } from "react-icons/md";
+import {
+  MdRestaurant,
+  MdCelebration
+} from "react-icons/md";
 
 const Amenities = () => {
   return (
-    <div className="bg-gray-100 py-20 px-6">
+    <div
+      className="
+        amenities-section
+      "
+    >
 
-      <h1 className="text-4xl font-bold text-center mb-12">
-        Our Amenities
-      </h1>
+      <div className="container">
 
-      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+        <h1
+          className="
+            amenities-heading
+            luxury-heading
+            text-center
+            mb-5
+          "
+        >
+          Our Amenities
+        </h1>
 
-        {/* Amenity Card */}
-        <div className="bg-white p-6 rounded-2xl shadow-lg text-center hover:scale-105 transition duration-300">
-          <FaWifi className="text-5xl mx-auto mb-4" />
-          <h2 className="text-xl font-semibold">
-            Free WiFi
-          </h2>
-        </div>
+        <div className="row g-4 justify-content-center">
 
-        <div className="bg-white p-6 rounded-2xl shadow-lg text-center hover:scale-105 transition duration-300">
-            <MdCelebration className="text-5xl mx-auto mb-4" />
-            <h2 className="text-xl font-semibold">
+          {/* Amenity Card */}
+          <div className="col-12 col-sm-6 col-lg-2">
+
+            <div className="amenity-card">
+
+              <FaWifi className="amenity-icon" />
+
+              <h2 className="amenity-title">
+                Free WiFi
+              </h2>
+
+            </div>
+
+          </div>
+
+          <div className="col-12 col-sm-6 col-lg-2">
+
+            <div className="amenity-card">
+
+              <MdCelebration className="amenity-icon" />
+
+              <h2 className="amenity-title">
                 Party Hall
-            </h2>
-        </div>
+              </h2>
 
-        <div className="bg-white p-6 rounded-2xl shadow-lg text-center hover:scale-105 transition duration-300">
-          <MdRestaurant className="text-5xl mx-auto mb-4" />
-          <h2 className="text-xl font-semibold">
-            Restaurant
-          </h2>
-        </div>
+            </div>
 
-        <div className="bg-white p-6 rounded-2xl shadow-lg text-center hover:scale-105 transition duration-300">
-          <FaParking className="text-5xl mx-auto mb-4" />
-          <h2 className="text-xl font-semibold">
-            Free Spacious Parking
-          </h2>
-        </div>
+          </div>
 
-        <div className="bg-white p-6 rounded-2xl shadow-lg text-center hover:scale-105 transition duration-300">
-            <FaHotel className="text-5xl mx-auto mb-4" />
-            <h2 className="text-xl font-semibold">
+          <div className="col-12 col-sm-6 col-lg-2">
+
+            <div className="amenity-card">
+
+              <MdRestaurant className="amenity-icon" />
+
+              <h2 className="amenity-title">
+                Restaurant
+              </h2>
+
+            </div>
+
+          </div>
+
+          <div className="col-12 col-sm-6 col-lg-3">
+
+            <div className="amenity-card">
+
+              <FaParking className="amenity-icon" />
+
+              <h2 className="amenity-title">
+                Free Spacious Parking
+              </h2>
+
+            </div>
+
+          </div>
+
+          <div className="col-12 col-sm-6 col-lg-2">
+
+            <div className="amenity-card">
+
+              <FaHotel className="amenity-icon" />
+
+              <h2 className="amenity-title">
                 Deluxe Rooms
-            </h2>
+              </h2>
+
+            </div>
+
+          </div>
+
         </div>
 
       </div>

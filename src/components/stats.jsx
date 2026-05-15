@@ -2,73 +2,90 @@ const Stats = () => {
   return (
     <div
       className="
-        relative
-        z-30
-        -translate-y-20
-        px-6
-        -mb-20
+        stats-wrapper
       "
     >
 
       <div
         className="
-          max-w-6xl
-          mx-auto
-
-          bg-white
-
-          rounded-3xl
-
-          shadow-2xl
-
-          grid
-          grid-cols-2
-          md:grid-cols-4
-
-          gap-8
-
-          p-10
+          container
         "
       >
 
-        <div className="text-center">
-          <h1 className="text-4xl font-bold text-[#d4a017]">
-            5000+
-          </h1>
+        <div
+          className="
+            stats-card
+          "
+        >
 
-          <p className="mt-2 text-gray-600">
-            Happy Guests
-          </p>
-        </div>
+          <div className="row g-4">
 
-        <div className="text-center">
-          <h1 className="text-4xl font-bold text-[#d4a017]">
-            50+
-          </h1>
+            <div className="col-6 col-md-3">
 
-          <p className="mt-2 text-gray-600">
-            Luxury Rooms
-          </p>
-        </div>
+              <div className="stats-item text-center">
 
-        <div className="text-center">
-          <h1 className="text-4xl font-bold text-[#d4a017]">
-            4.8
-          </h1>
+                <h1 className="stats-number">
+                  5000+
+                </h1>
 
-          <p className="mt-2 text-gray-600">
-            Guest Rating
-          </p>
-        </div>
+                <p className="stats-text">
+                  Happy Guests
+                </p>
 
-        <div className="text-center">
-          <h1 className="text-4xl font-bold text-[#d4a017]">
-            24/7
-          </h1>
+              </div>
 
-          <p className="mt-2 text-gray-600">
-            Service
-          </p>
+            </div>
+
+            <div className="col-6 col-md-3">
+
+              <div className="stats-item text-center">
+
+                <h1 className="stats-number">
+                  50+
+                </h1>
+
+                <p className="stats-text">
+                  Luxury Rooms
+                </p>
+
+              </div>
+
+            </div>
+
+            <div className="col-6 col-md-3">
+
+              <div className="stats-item text-center">
+
+                <h1 className="stats-number">
+                  4.8
+                </h1>
+
+                <p className="stats-text">
+                  Guest Rating
+                </p>
+
+              </div>
+
+            </div>
+
+            <div className="col-6 col-md-3">
+
+              <div className="stats-item text-center">
+
+                <h1 className="stats-number">
+                  24/7
+                </h1>
+
+                <p className="stats-text">
+                  Service
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
         </div>
 
       </div>

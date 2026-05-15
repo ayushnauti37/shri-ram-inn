@@ -5,19 +5,28 @@ import About from "./components/About";
 import Amenities from "./components/Amenities";
 import Footer from "./components/Footer";
 import Gallery from "./components/Gallery";
-import Stats from "./components/Stats";
+import Testimonials from "./components/Testimonials";
 
 function App() {
   return (
-    <div>
+    <div className="app-wrapper">
+
       <Navbar />
+
       <Hero />
-      <Stats/>
+
       <FeaturedRooms />
+
       <About />
+
+      <Testimonials />
+
       <Amenities />
+
       <Gallery />
+
       <Footer />
+
     </div>
   );
 }

@@ -9,50 +9,87 @@ const Gallery = () => {
   return (
     <div
       id="gallery"
-      className="py-20 px-6 bg-gray-100"
+      className="
+        gallery-section
+      "
     >
 
-      <h1 className="text-4xl font-bold text-center mb-12">
-        Our Gallery
-      </h1>
+      <div className="container">
 
-      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <h1
+          className="
+            gallery-heading
+            luxury-heading
+            text-center
+            mb-5
+          "
+        >
+          Our Gallery
+        </h1>
 
-        <img
-          src={gallery1}
-          alt="Gallery"
-          className="rounded-2xl shadow-lg h-72 w-full object-cover hover:scale-105 transition duration-300"
-        />
+        <div className="row g-4">
 
-        <img
-          src={gallery2}
-          alt="Gallery"
-          className="rounded-2xl shadow-lg h-72 w-full object-cover hover:scale-105 transition duration-300"
-        />
+          <div className="col-12 col-sm-6 col-lg-3">
 
-        <img
-          src={gallery3}
-          alt="Gallery"
-          className="rounded-2xl shadow-lg h-72 w-full object-cover hover:scale-105 transition duration-300"
-        />
+            <img
+              src={gallery1}
+              alt="Gallery"
+              className="gallery-image"
+            />
 
-        <img
-          src={gallery4}
-          alt="Gallery"
-          className="rounded-2xl shadow-lg h-72 w-full object-cover hover:scale-105 transition duration-300"
-        />
+          </div>
 
-        {/* <img
-          src={gallery5}
-          alt="Gallery"
-          className="rounded-2xl shadow-lg h-72 w-full object-cover hover:scale-105 transition duration-300"
-        />
+          <div className="col-12 col-sm-6 col-lg-3">
 
-        <img
-          src={gallery6}
-          alt="Gallery"
-          className="rounded-2xl shadow-lg h-72 w-full object-cover hover:scale-105 transition duration-300"
-        /> */}
+            <img
+              src={gallery2}
+              alt="Gallery"
+              className="gallery-image"
+            />
+
+          </div>
+
+          <div className="col-12 col-sm-6 col-lg-3">
+
+            <img
+              src={gallery3}
+              alt="Gallery"
+              className="gallery-image"
+            />
+
+          </div>
+
+          <div className="col-12 col-sm-6 col-lg-3">
+
+            <img
+              src={gallery4}
+              alt="Gallery"
+              className="gallery-image"
+            />
+
+          </div>
+
+          {/* <div className="col-12 col-sm-6 col-lg-3">
+
+            <img
+              src={gallery5}
+              alt="Gallery"
+              className="gallery-image"
+            />
+
+          </div>
+
+          <div className="col-12 col-sm-6 col-lg-3">
+
+            <img
+              src={gallery6}
+              alt="Gallery"
+              className="gallery-image"
+            />
+
+          </div> */}
+
+        </div>
 
       </div>
 

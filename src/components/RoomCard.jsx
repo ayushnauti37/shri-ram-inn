@@ -4,33 +4,33 @@ const RoomCard = ({ image, title, price }) => {
     `https://wa.me/918923766728?text=Hello,%20I%20want%20to%20book%20the%20${title}`;
 
   return (
-    <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+    <div className="room-card">
 
       <img
         src={image}
         alt={title}
-        className="w-full h-64 object-cover"
+        className="room-card-image"
       />
 
-      <div className="p-5">
+      <div className="room-card-body">
 
-        <h2 className="text-2xl font-semibold">
+        <h2 className="room-card-title">
           {title}
         </h2>
 
-        <p className="text-gray-600 mt-2">
+        <p className="room-card-price">
           ₹{price} / night
         </p>
 
         {/* Buttons */}
-        <div className="flex gap-4 mt-5">
+        <div className="d-flex gap-3 mt-4">
 
           {/* WhatsApp */}
           <a
             href={whatsappMessage}
             target="_blank"
             rel="noreferrer"
-            className="bg-black text-white px-4 py-2 rounded-lg"
+            className="room-whatsapp-btn"
           >
             WhatsApp
           </a>
@@ -38,7 +38,7 @@ const RoomCard = ({ image, title, price }) => {
           {/* Call */}
           <a
             href="tel:+918923766728"
-            className="border border-black px-4 py-2 rounded-lg"
+            className="room-call-btn"
           >
             Call Now
           </a>

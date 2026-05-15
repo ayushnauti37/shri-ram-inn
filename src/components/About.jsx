@@ -2,41 +2,58 @@ import hotelImage from "../assets/hotel.jpeg";
 
 const About = () => {
   return (
-    <div id="about" className="py-20 px-6">
+    <div
+      id="about"
+      className="
+        about-section
+      "
+    >
 
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <div className="container">
 
-        {/* Image */}
-        <div>
-          <img
-            src={hotelImage}
-            alt="Hotel"
-            className="rounded-2xl shadow-lg"
-          />
-        </div>
+        <div className="row align-items-center g-5">
 
-        {/* Content */}
-        <div>
+          {/* Image */}
+          <div className="col-12 col-md-6">
 
-          <h1 className="text-4xl font-bold mb-6">
-            About Our Hotel
-          </h1>
+            <img
+              src={hotelImage}
+              alt="Hotel"
+              className="about-image"
+            />
 
-          <p className="text-gray-600 leading-8">
-            Welcome to Hotel Shri Ram Inn, where comfort meets elegance.
-            We provide world-class rooms, premium hospitality,
-            delicious dining, and unforgettable experiences for
-            our guests.
-          </p>
+          </div>
 
-          <p className="text-gray-600 leading-8 mt-4">
-            Whether you are traveling for business or vacation,
-            our hotel ensures a relaxing and luxurious stay.
-          </p>
+          {/* Content */}
+          <div className="col-12 col-md-6">
 
-          <button className="mt-6 bg-black text-white px-6 py-3 rounded-lg">
-            Learn More
-          </button>
+            <h1
+              className="
+                about-heading
+                luxury-heading
+                mb-4
+              "
+            >
+              About Our Hotel
+            </h1>
+
+            <p className="about-text">
+              Welcome to Hotel Shri Ram Inn, where comfort meets elegance.
+              We provide world-class rooms, premium hospitality,
+              delicious dining, and unforgettable experiences for
+              our guests.
+            </p>
+
+            <p className="about-text mt-4">
+              Whether you are traveling for business or vacation,
+              our hotel ensures a relaxing and luxurious stay.
+            </p>
+
+            <button className="about-btn mt-4">
+              Learn More
+            </button>
+
+          </div>
 
         </div>
 
